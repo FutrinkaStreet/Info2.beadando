@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mert mese nélkül mit érek én?</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1><span>M</span><span>e</span><span>r</span><span>t</span> <span>m</span><span>e</span><span>s</span><span>e</span> <span>n</span><span>é</span><span>l</span><span>k</span><span>ü</span><span>l</span> <span>m</span><span>i</span><span>t</span> <span>é</span><span>r</span><span>e</span><span>k</span> <span>é</span><span>n</span><span>?</span></h1>
+        <div class="game-link">
+            <a href="quiz.html">Játék!</a>
+        </div>
+        <div class="buttons-top-right">
+            <!-- A gombok elhelyezése jobb felső sarokban -->
+            <button id="task3aButton">3a feladat</button>
+            <button id="task3bButton">3b feladat</button>
+            <a href="../feladat4/olcso.html" target="_blank"><button>4. feladat</button></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('task3aButton').addEventListener('click', function() {
+            // Para.js fájl betöltése és futtatása a gombra való kattintás eseményéhez
+            const paraScript = document.createElement('script');
+            paraScript.src = 'para.js';
+            document.head.appendChild(paraScript);
+        });
+
+        document.getElementById('task3bButton').addEventListener('click', function() {
+            // Futtatni kívánt funkciók
+        });
+    </script>
+
+</body>
+</html>

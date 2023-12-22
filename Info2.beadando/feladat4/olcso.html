@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Legolcsóbb termékek keresése</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Legolcsóbb termékek keresése</h1>
+  <form id="productsForm">
+    <label for="product1Name">1. termék neve:</label>
+    <input type="text" id="product1Name" required>
+    <label for="product1Price">Ára:</label>
+    <input type="number" id="product1Price" required><br>
+
+    <label for="product2Name">2. termék neve:</label>
+    <input type="text" id="product2Name" required>
+    <label for="product2Price">Ára:</label>
+    <input type="number" id="product2Price" required><br>
+
+    <label for="product3Name">3. termék neve:</label>
+    <input type="text" id="product3Name" required>
+    <label for="product3Price">Ára:</label>
+    <input type="number" id="product3Price" required><br>
+
+    <label for="product4Name">4. termék neve:</label>
+    <input type="text" id="product4Name" required>
+    <label for="product4Price">Ára:</label>
+    <input type="number" id="product4Price" required><br>
+
+    <label for="product5Name">5. termék neve:</label>
+    <input type="text" id="product5Name" required>
+    <label for="product5Price">Ára:</label>
+    <input type="number" id="product5Price" required><br>
+
+    <label for="product6Name">6. termék neve:</label>
+    <input type="text" id="product6Name" required>
+    <label for="product6Price">Ára:</label>
+    <input type="number" id="product6Price" required><br>
+
+    <label for="product7Name">7. termék neve:</label>
+    <input type="text" id="product7Name" required>
+    <label for="product7Price">Ára:</label>
+    <input type="number" id="product7Price" required><br>
+
+    <input type="submit" value="Keresés">
+    <button type="button" id="calculateAverageButton">Átlag</button> <!-- Átlag gomb -->
+    <button type="button" id="calculateStandardDeviationButton">Szórás</button> <!-- Szórás gomb -->
+  </form>
+
+  <div id="result"></div>
+
+  <script src="olcsobb.js"></script>
+</body>
+</html>

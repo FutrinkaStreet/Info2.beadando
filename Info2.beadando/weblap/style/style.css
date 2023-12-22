@@ -1,0 +1,64 @@
+/* Cím formázása */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif; /* betűtípus beállítása */
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    background-image: url('../img/hatter.jpg'); /* Háttérkép beállítása */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* rögzített háttérkép */
+    background-color: #f0f0f0; /* Alap háttérszín */
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px; /* Azért, hogy kissé lejjebb helyezzük a szöveget az oldal tetejétől */
+}
+
+/* Betűszínek definiálása */
+h1 span:nth-child(4n+1) {
+    color: rgb(252, 206, 0);
+}
+
+h1 span:nth-child(4n+2) {
+    color: rgb(240, 0, 0);
+}
+
+h1 span:nth-child(4n+3) {
+    color: rgb(23, 109, 23);
+}
+
+h1 span:nth-child(4n+4) {
+    color: rgb(31, 31, 149);
+}
+/* Körvonal hozzáadása */
+h1 span {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.game-link {
+    text-align: center;
+    margin-top: 50px; /* Távolság az alatta lévő elemektől */
+}
+
+.game-link a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px; /* A felirat betűmérete */
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #11318b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    text-decoration: none; /* A hivatkozás alatti aláhúzást eltávolítja */
+}
+
+.game-link a:hover {
+    background-color: #3071a9;
+}

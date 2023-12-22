@@ -1,0 +1,80 @@
+body {
+    display: flex; /*a tartalmi elemek rugalmas elhelyezése*/
+    justify-content: center;/*középre igazítják a tartalmat függőlegesen és vízszintesen*/
+    align-items: center;/*középre igazítják a tartalmat függőlegesen és vízszintesen*/
+    height: 100vh;/*a teljes magasság 100%-át foglalja el a body elem*/
+    margin: 0;/*margó*/
+    background-color: #fbf1ac; /* halvány sárga háttérszín */
+    font-size: 20px; /* nagyobb betűméret */
+    font-weight: 600; /* félkövér betűtípus */
+    text-align: center; /* szöveg középre igazítása */
+  }
+  
+  .container {
+    max-width: 600px; /* Maximális szélesség beállítása */
+    width: 90%; /* A tartalom 90%-os szélessége */
+    margin: 0 auto; /* Középre igazítás */
+  }
+  
+  .question {
+    font-weight: bold;/*kérdések vastagon szedve*/
+    margin-bottom: 10px;/*kérdés alatti távolság*/
+  }
+  
+  .options {
+    margin-bottom: 20px;
+  }
+  
+  .option {
+    display: block;/* egy sorban csak egy lehetőség*/
+    margin-bottom: 10px;
+  }
+  
+  .button {
+    display: inline-block;/*a gombok egymás mellett jelennek meg*/
+    padding: 10px 20px;
+    background-color: #0d5da3;
+    color: #fff;
+    border: none;/*nincs szegély*/
+    cursor: pointer;/*Az egérkurzor gombra helyezésekor kitűnik*/
+    font-size: 16px;
+    border-radius: 4px;/*Kerekített sarkokat ad a gomboknak*/
+    transition: background-color 0.3s;
+    margin-right: 10px;
+  }
+  
+  .button:hover {
+    background-color: #33d074;
+  }
+  
+  .result {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  h1 {
+    text-align: center;
+    margin: 20px 0; /* Nagyobb margó felül és alul */
+    position: relative; /* Relatív pozíció beállítása */
+  }
+  
+  h1 span {
+    background: #fff; /* Háttérszín a szöveg alatt */
+    padding: 0 10px; /* Távolság a szélektől */
+    position: relative; /* Relatív pozíció beállítása */
+  }
+  
+  h1:before {
+    content: ''; /* Tartalom hozzáadása */
+    position: absolute; /* Abszolút pozíció beállítása */
+    width: 100%; /* Teljes szélesség */
+    height: 2px; /* Vonal vastagsága */
+    background-color: #000; /* Vonal színe */
+    bottom: -5px; /* Vonal pozíciója a szöveg alatt */
+    left: 0; /* Vonal kezdete */
+  }

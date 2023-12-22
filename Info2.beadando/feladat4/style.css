@@ -1,0 +1,57 @@
+/* Stílusok az űrlap és az eredmény megjelenítéséhez */
+body {
+    font-family: Times, sans-serif;
+    margin: 30px;
+    background-image: url('img/ar.jpg'); /* Háttérkép beállítása */
+    background-size: cover; /* Háttérkép mérete a teljes body-ra */
+    font-weight: bold; /* Betű vastagságának beállítása félkövérré */
+    color: rgb(10, 80, 10); /* Szöveg színe sötétzöldre */
+    font-size: x-large;
+    text-shadow: 2px 2px 2px black; /* Fekete árnyékolás hozzáadása */
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="submit"] {
+    margin-bottom: 20px;
+
+}
+
+h1 {
+    text-decoration: underline;
+    text-decoration-style: wavy; /* Hullámos vonal aláhúzáshoz */
+    text-decoration-thickness: 2px; /* Térfogat a szöveg és az aláhúzás között */
+    text-decoration-color: white; /* Fehér aláhúzás színe */
+}
+input[type="submit"] {
+    background-color: rgba(7, 49, 24, 0.452); /* Gomb háttérszínének fekete */
+    font-size: large;
+    font-style: italic;
+    font-weight: bold;
+    margin-left: 320px;
+}
+#calculateAverageButton {
+    background-color: rgba(2, 119, 26, 0.487); 
+    color: rgb(0, 0, 0); 
+    font-size: 19px; /* Betűméret növelése */
+    font-style: italic;
+    font-weight: bold;
+    cursor: pointer; /* Mutató ikon az interaktivitás jelzésére */
+}
+
+#calculateAverageButton:hover {
+    background-color: darkorange; /* Narancsszínű háttér hover állapotban */
+}
+
+#calculateStandardDeviationButton {
+    background-color: rgba(28, 6, 126, 0.332);
+    color: black; /* Fekete szöveg */
+    font-size: 19px; /* Betűméret */
+    font-style: italic;
+    font-weight: bold;
+    cursor: pointer; /* Mutató ikon az interaktivitás jelzésére */
+}
+
+#calculateStandardDeviationButton:hover {
+    background-color: dodgerblue; /* Kék háttérszín hover állapotban */
+}
